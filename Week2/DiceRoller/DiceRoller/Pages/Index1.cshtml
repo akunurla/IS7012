@@ -1,0 +1,33 @@
+﻿
+@page
+@model DiceRoller.Pages.DiceRollerModel
+@{
+    int random = new Random().Next(1, 7);
+    int win = 1;
+}
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th>Random Number</th>
+            <th>Options : WIN or LOSS/th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>If Random Number equals to 1</td>
+            <td>You have Won</td>
+        </tr>
+        <tr>
+            <td>If Random NUmber not equal to 1</td>
+            <td>You have Lost</td>
+        </tr>
+    </tbody>
+</table>
+@if (random == win)
+{<h1>WIN</h1> }
+else
+{@random;
+int remaining = random - win;
+<h1>RandomNumber @random - You lost. Your number was @remaining off from the winning number</h1>
+}
+
