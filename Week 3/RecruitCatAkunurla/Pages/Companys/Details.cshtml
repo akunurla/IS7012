@@ -81,19 +81,15 @@
     {
 <div class="alert alert-info">
     <h4>No Candidates</h4>
-    <p>No Candidate have applied to this position</p>
-</div> }
+</div>
+    }
             else
             {
-
-
-
-
 <table class="table table-bordered">
     <thead>
         <tr>
             <th>First Name</th>
-            <th>Job Title</th>
+            
             <th>Industry</th>
 
             <th></th>
@@ -104,15 +100,15 @@
                 {
                     <tr>
                         <td>@ca.FirstName</td>
+                      
+                        <td>@ca.IndustryId</td>
 
-                        <td>@ca.JobTitle.Title</td>
-                        <td>@ca.Industry.Name</td>
-
-                        <td><a href="/Candidates/Details?id=@ca.Id">Details</a>
+                       <td><a href="/Candidates/Details?id=@ca.Id">Details</a>
                     </tr>
 }
             </tbody>
 </table>}
+
 </div>
 
 

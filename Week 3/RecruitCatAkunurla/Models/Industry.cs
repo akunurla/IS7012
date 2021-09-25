@@ -13,7 +13,7 @@ namespace RecruitCatAkunurla.Models
         [Required]
         [StringLength(50)]
         public string Name { get; set; }
-        [DisplayName("ID")]
+        [DisplayName("Industry ID")]
         public int ID { get; set; }
         [DisplayName("Profit Percent")]
         [Range(0, 100)]
@@ -21,7 +21,7 @@ namespace RecruitCatAkunurla.Models
         
         public List<Candidate> Candidates { get; set; }
       
-        public List<Company> Companies { get; set; }
+        public List<Company> Companys { get; set; }
        
 
     }

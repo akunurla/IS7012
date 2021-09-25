@@ -34,10 +34,14 @@ namespace RecruitCatAkunurla.Models
         public DateTime EstablishedOn { get; set; }
        
         public List<Candidate> Candidates { get; set; }
-       
+        [DisplayName("Industry")]
         public Industry Industry { get; set; }
+        [DisplayName("Industry")]
         public int IndustryId { get; set; }
+        [DisplayName("Job Title")]
         public JobTitle Jobtitle { get; set; }
+        [DisplayName("Job Title")]
+
         public int JobtitleId { get; set; }
 
     }

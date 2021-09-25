@@ -70,10 +70,10 @@
                 @Html.DisplayFor(modelItem => item.EstablishedOn)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Industry)
+                @Html.DisplayFor(modelItem => item.Industry.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Jobtitle)
+                @Html.DisplayFor(modelItem => item.Jobtitle.Title)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
