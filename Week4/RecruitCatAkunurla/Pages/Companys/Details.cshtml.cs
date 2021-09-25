@@ -28,7 +28,7 @@ namespace RecruitCatAkunurla.Pages.Companys
                 return NotFound();
             }
 
-            Company = await _context.Company
+            Company = await _context.Company.Include(co=> co.Candidates)
                 .Include(c => c.Industry)
                 .Include(c => c.Jobtitle).FirstOrDefaultAsync(m => m.Id == id);
 

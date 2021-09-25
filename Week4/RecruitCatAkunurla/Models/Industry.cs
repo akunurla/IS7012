@@ -10,10 +10,13 @@ namespace RecruitCatAkunurla.Models
     public class Industry
     {
         [DisplayName("Name")]
+        [Required]
+        [StringLength(50)]
         public string Name { get; set; }
         [DisplayName("ID")]
         public int ID { get; set; }
         [DisplayName("Profit Percent")]
+        [Range(0, 100)]
         public int ProfitPercent { get; set; }
         
         public List<Candidate> Candidates { get; set; }

@@ -21,8 +21,8 @@ namespace RecruitCatAkunurla.Pages.Companys
 
         public IActionResult OnGet()
         {
-        ViewData["IndustryId"] = new SelectList(_context.Set<Industry>(), "ID", "ID");
-        ViewData["JobtitleId"] = new SelectList(_context.Set<JobTitle>(), "Id", "Id");
+        ViewData["IndustryId"] = new SelectList(_context.Set<Industry>(), "ID", "Name");
+        ViewData["JobtitleId"] = new SelectList(_context.Set<JobTitle>(), "Id", "Title");
             return Page();
         }
 

@@ -38,8 +38,8 @@ namespace RecruitCatAkunurla.Pages.Companys
             {
                 return NotFound();
             }
-           ViewData["IndustryId"] = new SelectList(_context.Set<Industry>(), "ID", "ID");
-           ViewData["JobtitleId"] = new SelectList(_context.Set<JobTitle>(), "Id", "Id");
+           ViewData["IndustryId"] = new SelectList(_context.Set<Industry>(), "ID", "Name");
+           ViewData["JobtitleId"] = new SelectList(_context.Set<JobTitle>(), "Id", "Title");
             return Page();
         }
 

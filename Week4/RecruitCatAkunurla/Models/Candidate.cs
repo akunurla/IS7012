@@ -11,17 +11,23 @@ namespace RecruitCatAkunurla.Models
     public class Candidate
     {
         public int Id { get; set; }
-        [DataType(DataType.Date)]
         [DisplayName("Date of Birth")]
+        [DataType(DataType.Date)]
+        
         public DateTime DateOfBirth { get; set; }
         [DisplayName("Target Salary")]
         public decimal TargetSalary { get; set; }
         [DisplayName("Optional Start Date")]
         [DataType(DataType.Date)]
+        
         public DateTime OptionalStartDate { get; set; }
         [DisplayName("First Name")]
+        [Required]
         public string FirstName { get; set; }
+      
         [DisplayName("Last Name")]
+        [Required]
+
         public string LastName { get; set; }
         [DisplayName("Previous Work Experience")]
         public string? PreviousWorkExperience { get; set; }
